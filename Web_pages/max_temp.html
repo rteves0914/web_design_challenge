@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather compared to Latitude</title>
@@ -12,7 +13,7 @@
 </head>
 
 <body>
-     
+
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: white">
         <a class="navbar-brand" style="color:  teal" href="summary_page.html">Latitude</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
@@ -44,16 +45,46 @@
         </div>
     </nav>
 
-    <h1 style="color: teal">Max Temperature</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
 
-    <img src="../Web_Visualizations/latitude_vs_temperature.png" height=600px>
-    </br>
-    </br>
-    <p>
-        As expected, the weather becomes significantly warmer as one approaches the equator (0 Deg. Latitude). More
-        interestingly, however, is the fact that the southern hemisphere tends to be warmer this time of year than the
-        northern hemisphere. This may be due to the tilt of the earth at the time of the year this data was gathered.
-    </p>
+                <h1 style="color: teal">Max Temperature</h1>
+
+                <img src="../Web_Visualizations/latitude_vs_temperature.png" height=300px>
+                </br>
+                </br>
+
+                <p>
+                    As expected, the weather becomes significantly warmer as one approaches the equator (0 Deg.
+                    Latitude). More
+                    interestingly, however, is the fact that the southern hemisphere tends to be warmer this time of
+                    year than the
+                    northern hemisphere. This may be due to the tilt of the earth at the time of the year this data was
+                    gathered.
+                </p>
+
+            </div>
+
+            <div class="col-md-4 col-sm-12">
+
+                <h2 style="color: teal">Visualizations</h2>
+
+                <a href="max_temp.html" style="color: teal" style="text-align: center"><img
+                        src="../Web_Visualizations/latitude_vs_temperature.png" width="128" height="128"></a>
+
+                <a href="humidity.html" style="color: teal" style="text-align: center"><img
+                        src="../Web_Visualizations/latitude_vs_humidity.png" width="128" height="128"></a>
+
+                <a href="cloudiness.html" style="color: teal" style="text-align: center"><img
+                        src="../Web_Visualizations/latitude_vs_cloudiness.png" width="128" height="128"></a>
+
+                <a href="wind_speed.html" style="color: teal" style="text-align:center"><img
+                        src="../Web_Visualizations/latitude_vs_wind_speed.png" width="128" height="128"></a>
+
+            </div>
+        </div>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -64,6 +95,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+        
 </body>
 
 </html>
